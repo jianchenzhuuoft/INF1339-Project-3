@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<meta charset="utf-8">
+<title>Version1</title>
+
+<head>
+  <script>
+    function fibonacci(number) {
+      //if number is 1 or 2  just return 1
+      if (number == 1 || number == 2) {
+        return 1;
+      } else {
+        return (number - 1) + (number - 2);
+      }
+      //otherwise return sum of fibonacci of previous two numbers
+    }
+
+    function compute_and_display() {
+      // get the value from the input
+
+      //result = fibonacci(input)
+
+      //display result on the webpage
+
+    }
+  </script>
+</head>
+
+<body>
+  <!-- USER INPUTS A NUMBER -->
+  <form class="inputForm" action="index.html" method="post">
+    <h3>Enter a number here:</h3>
+    <input id="inputValue" type="text">
+  </form>
+  <!--BUTTON THAT RUNS "compute_and_display()" -->
+  <button type="button" class="button" onclick="compute_and_display()">fibonacci</button>
+  <p id="output_goes_here"></p>
+</body>
+
+</html>
